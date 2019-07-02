@@ -1,5 +1,42 @@
-body {margin:0; font-family:Roboto; font-style: normal}   
-#header{width:100%; height:90px; border: solid 1px red}
-#header #area{position:absolute; width:30%; padding: 3%; border: solid 1px red}
-#nav{width:100%; height:90px; border: solid 1px blue}
-#section{width:100%; height:90px; border: solid 1px green}
+body {margin:0; font-family:Roboto; font-style: normal; font-size:14px; color:#999999}   
+img {vertical-align: middle}
+
+body .menu{position: absolute; width: 100%; text-align: center;}
+body .menu ul { list-style:none; margin:0px; padding: 0px;  }
+body .menu li { display: inline-block; }
+body .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weight: bold;}
+
+#header{width:100%; position: relative; border-bottom: solid 2px #F5F5F5 }
+#header div{display:inline-block;text-align: center; line-height: 80px; }
+#header #area{ padding-left: 2%; max-width: 150px; }
+#header #weather{ margin-left: 2%;  }
+#header #login{ position:absolute; right:0; padding-right: 2%; }
+#header #logo img{ position:absolute;max-width:100%; max-height:100%; width:auto; height:auto; margin:auto; top:0; bottom:0; left:0; right:0;}
+
+
+#nav{width:100%; height:80px; position: relative; border-bottom: solid 2px #F5F5F5; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05)  }
+#nav div{display:inline-block; text-align: center; min-width: 80px; line-height: 80px;}
+#nav #menu{position: absolute; width: 100%; text-align: center;}
+#nav #menu ul { list-style:none; margin:0px; padding: 0px;  }
+#nav #menu li { display: inline-block; }
+#nav #menu .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weight: bold;}
+#nav #menu_icon{ position:absolute; border-right: solid 2px #F5F5F5; }
+#nav #search{position:absolute; right:0;border-left: solid 2px #F5F5F5;}
+
+#section{width:100%; height: 300px; background-color: #F2F2F2 }
+
+#footer{width:100%; height:290px; position: relative}
+#footer #footMenu{position: absolute; width: 100%; text-align: center;}
+#footer #footMenu ul { list-style:none; margin:0px; padding: 0px;  }
+#footer #footMenu li { display: inline-block; }
+#footer #footMenu {margin-top: 50px;}
+#footer #footMenu a{font-size: 16px;}
+#footer .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weight: bold;}
+
+#footer #social {position: absolute; width:100%; text-align:center; margin-top:110px;}
+#footer #social img{border: solid 2px #F5F5F5; padding: 5px; border-radius: 50%; margin: 0 1%;}
+#footer #social #line{margin-top: 20px; border:2px solid #F5F5F5}
+#footer #copyright{position: absolute; width: 100%; text-align: center;}
+#footer #copyright ul { list-style:none; margin:0px; padding: 0px;  }
+#footer #copyright li { display: inline-block; }
+#footer #copyright .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weight : bold;}
