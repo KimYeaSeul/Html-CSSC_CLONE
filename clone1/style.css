@@ -23,7 +23,19 @@ body .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weig
 #nav #menu_icon{ position:absolute; border-right: solid 2px #F5F5F5; }
 #nav #search{position:absolute; right:0;border-left: solid 2px #F5F5F5;}
 
-#section{width:100%; height: 300px; background-color: #F2F2F2 }
+#section{position:relative; min-width:1110px; height: 600px; background-color: #F2F2F2; padding-top:5%;}
+#section .container1{ position: absolute; left:10%; display:flex;flex-direction: row; width: 255px; height:100%;}
+#section .container1 .item1 { width:255px; height: 600px; background-color: red}
+
+#section .container2{ position: absolute; left:28%; right:10%; display:flex;flex-direction: row; justify-content: space-around;}
+#section .container2 .item2 { width:540px; height: 330px; background-color: blue}
+#section .container2 .item3 { width:255px; height: 50px; background-color: green}
+
+#section .container3{ position: absolute; left:28%; right:10%; align-items: flex-end; height:600px; display:flex;flex-direction: row; justify-content: space-around;}
+#section .container3 .item4 { width:255px; height: 50px; background-color: blueviolet}
+#section .container3 .item5 { width:255px; height: 50px; background-color: palevioletred}
+#section .container3 .item6 { width:265px; height: 50px; background-color: orangered}
+
 
 #footer{width:100%; height:290px; position: relative}
 #footer #footMenu{position: absolute; width: 100%; text-align: center;}
@@ -36,7 +48,8 @@ body .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weig
 #footer #social {position: absolute; width:100%; text-align:center; margin-top:110px;}
 #footer #social img{border: solid 2px #F5F5F5; padding: 5px; border-radius: 50%; margin: 0 1%;}
 #footer #social #line{margin-top: 20px; border:2px solid #F5F5F5}
-#footer #copyright{position: absolute; width: 100%; text-align: center;}
+
+#footer #copyright{margin-top:200px; position: absolute; width: 100%; text-align: center;}
 #footer #copyright ul { list-style:none; margin:0px; padding: 0px;  }
 #footer #copyright li { display: inline-block; }
 #footer #copyright .menuLink{text-decoration: none; color: #999999; padding: 0 15px; font-weight : bold;}
