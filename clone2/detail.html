@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{margin: 0; padding: 0; font-family: Avenir}
+        #header {position: relative; padding-top: 5px; background-color:#F5F5F5;}
+        #header #time{font-size: 14px; padding-left: 10px;}
+        #header #con{display: inline;position: absolute; right: 0; right: 10px;}
+        #header #con img{ width: 10px; height: 10px; border: 1px solid blueviolet; display: inline-block; }
+        #extra {background-color:#F5F5F5; position: relative}
+        #extra #obj{ width: 100%; height: auto}
+        #extra #x{ position: absolute; margin: 10px;}
+        #extra #p{ position: absolute; bottom: 20px; left:10px;}
+        #extra #p p{padding: 0; margin: 0;}
+        #categories table {width: 100%; margin:auto;}
+        #categories td {width: 100px; }
+        #categories #container{ position: relative; border-top: 30px solid #fff}
+        #categories #title{font-size: 18px; font-weight: bold; margin-left: 10px;}
+        #categories #show{position: absolute; right: 5px;}
+        #categories #img{width: 30%; text-align: center;}
+        #categories #img img{top:0;}
+        #categories #info{position: relative; border-bottom:1px solid gray }
+        #categories #info a{position: absolute; right:10px; line-height: 88px;}
+        #categories #info p{margin-left: 10px;}
+        #categories #info #shop{position: absolute; width: 65px; height:30px; background-color: black; bottom: 20px; right: 10px; color: white;text-align: center; line-height: 30px; font-size: 14px;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <span id="time"></span>
+        <div id="con">
+            <img src="" alt="" id="comm">
+            <img src="" alt="" id="wifi">
+            <img src="" alt="" id="pw">
+        </div>
+    </div>
+    <div id="extra">
+        <img src="img/close.png" alt="" id="x" onclick="location.href='index.html'">
+        <img src="img/object.png" alt="" id="obj">
+        <div id="p">
+            <p>cyber monday</p>
+            <p>Sale Up To</p>
+            <p>70% Off</p>
+            <p>shop now</p>
+        </div>
+    </div>
+    <div id="categories">
+        <table>
+            <tr>
+                <td colspan="2" id="container"> <span id="title">Charis(350)</span> <span id="show">show all <img src="img/right.png" alt=""></span></td>
+            </tr>
+            <tr>
+                <td id="img"> <div><img src="img/img1.png" alt=""></div></td>
+                <td id="info">
+                    <div id="shop">Shop</div>
+                    <p>Decoration</p>
+                    <p>$29.00</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="img"> <div><img src="img/img1.png" alt=""></div></td>
+                <td id="info">
+                    <div id="shop">Shop</div>
+                    <p>Decoration</p>
+                    <p>$29.00</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="img"> <div><img src="img/img1.png" alt=""></div></td>
+                <td id="info">
+                    <div id="shop">Shop</div>
+                    <p>Decoration</p>
+                    <p>$29.00</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="container"> <span id="title">Charis(350)</span> <span id="show">show all <img src="img/right.png" alt=""></span></td>
+            </tr>
+            <tr>
+                <td id="img"> <div><img src="img/img1.png" alt=""></div></td>
+                <td id="info">
+                    <div id="shop">Shop</div>
+                    <p>Decoration</p>
+                    <p>$29.00</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="img"> <div><img src="img/img1.png" alt=""></div></td>
+                <td id="info">
+                    <div id="shop">Shop</div>
+                    <p>Decoration</p>
+                    <p>$29.00</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="img"> <div><img src="img/img1.png" alt=""></div></td>
+                <td id="info">
+                    <div id="shop">Shop</div>
+                    <p>Decoration</p>
+                    <p>$29.00</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        let time = document.getElementById("time");
+        let d = new Date();
+        time.innerHTML= `${d.getHours()}:${d.getMinutes()}`;
+    </script>
+</body>
+</html>
