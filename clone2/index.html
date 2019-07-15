@@ -85,7 +85,7 @@
     <script>
         let time = document.getElementById("time");
         let d = new Date();
-        time.innerHTML= `${d.getHours()}:${d.getMinutes()}`;
+        time.innerHTML= `${d.getHours()}:${d.getMinutes()<10? '0'+d.getMinutes() : d.getMinutes()}`;
     </script>
 </body>
 </html>
